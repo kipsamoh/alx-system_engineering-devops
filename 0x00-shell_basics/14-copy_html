@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -ui *.htm ..
+cp -u *.html ..

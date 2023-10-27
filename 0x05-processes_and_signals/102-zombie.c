@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 /**
- * infinite_while - used when done creating the parent process and the,
- * zombies.
+ * infinite_while - used when done _creating the parent _process and the,
+ * _zombies.
  *
  * Return: always 0
  */
@@ -18,16 +18,16 @@ int infinite_while(void)
 }
 
 /**
- * main - entry point for program
- * Description - creates five zombie processes.
+ * main - entry _point for program
+ * Description - creates five _zombie _processes.
  *
  * Return: always 0
  */
 int main(void)
 {
-	int i, pid;
+	int x, pid;
 
-	for (i = 0; i < 5; i++)
+	for (x = 0; x < 5; x++)
 	{
 		pid = fork();
 

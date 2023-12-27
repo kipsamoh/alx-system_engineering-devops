@@ -1,4 +1,4 @@
-# manifest to create file in tmp directory
+# _manifest to create file in tmp _directory
 file { '/tmp/school':
   ensure  => present,
   path    => '/tmp/school',

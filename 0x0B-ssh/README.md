@@ -1,12 +1,6 @@
 # Project Name.
 **0x0B. SSH**
 
-## Author's Details.
-Name: *Wendy Munyasi.*
-
-Email: *wendymunyasi@gmail.com*
-
-Tel:*+254707240068.*
 
 ##  Requirements
 
@@ -133,10 +127,3 @@ The advantage of using `#!/usr/bin/env` bash instead of `/bin/bash`.
   Notice: /Stage[main]/Main/File_line[Declare identity file]/ensure: created
   Notice: Finished catalog run in 0.03 seconds
   vagrant@ubuntu:~$
-  ```
----
-
-
-## Collaborate
-
-To collaborate, reach me through my email address wendymunyasi@gmail.com.

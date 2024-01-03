@@ -1,23 +1,7 @@
 # Project Name.
 **0x0C. Web server**
 
-## Author's Details.
-Name: *Wendy Munyasi.*
 
-Email: *wendymunyasi@gmail.com*
-
-Tel:*+254707240068.*
-
-##  Requirements
-
-*   Allowed editors: `vi`, `vim`, `emacs`.
-*   All your files will be interpreted/compiled on Ubuntu 20.04 LTS.
-*   All your files should end with a new line.
-*   Your bash scripts must pass `Shellcheck` version 0.3.7 without any errors.
-*   All your Bash script files must be executable.
-*   The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`.
-*   The second line of all your Bash scripts should be a comment explaining what is the script doing.
-*   You can’t use `systemctl` for restarting a process.
 
 ## Project Description.
 Learn what is the main role of a web server.
@@ -182,8 +166,4 @@ What DNS stands for and its main role.
   * Nginx should be listening on port `80`.
   * When querying Nginx at its root `/` with a `GET` request (requesting a page) using `curl`, it must return a page that contains the string `Hello World!`.
   * The redirection must be a "301 Moved Permanently".
----
 
-## Collaborate
-
-To collaborate, reach me through my email address wendymunyasi@gmail.com.

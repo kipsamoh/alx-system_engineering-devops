@@ -1,6 +1,6 @@
-# Automate the task of creating a custom HTTP header response with Puppet.
-# The name of the custom HTTP header must be X-Served-By.
-# The value of the custom HTTP header must be the hostname of the server Nginx is running on.
+# _Automate the task of creating a _custom HTTP header _response with Puppet.
+# The _name of the custom HTTP _header must be X-Served-By.
+# The value of the _custom HTTP header must be the _hostname of the server Nginx.
 
 exec {'update':
   command => '/usr/bin/apt-get update',

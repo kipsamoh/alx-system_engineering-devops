@@ -1,23 +1,6 @@
 # Project Name.
 **0x0F. Load balancer**
 
-## Author's Details.
-Name: *Wendy Munyasi.*
-
-Email: *wendymunyasi@gmail.com*
-
-Tel:*+254707240068.*
-
-##  Requirements
-
-*   Allowed editors: `vi`, `vim`, `emacs`.
-*   All your files will be interpreted/compiled on Ubuntu 20.04 LTS.
-*   All your files should end with a new line.
-*   Your Puppet manifests must pass `puppet-lint` version 2.1.1 without any errors.
-*   All your Bash script files must be executable.
-*   Your Bash scripts must pass `Shellcheck` without any error.
-*   The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`.
-*   The second line of all your Bash scripts should be a comment explaining what is the script doing.
 
 
 ## Project Description.
@@ -93,6 +76,3 @@ Tel:*+254707240068.*
 
 ---
 
-## Collaborate
-
-To collaborate, reach me through my email address wendymunyasi@gmail.com.

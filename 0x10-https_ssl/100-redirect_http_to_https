@@ -33,19 +33,19 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-#--munyasi.tech-params-begin--
-backend munyasi.tech-backend
+#--kipsamoh.tech-params-begin--
+backend kipsamoh.tech-backend
         balance roundrobin
         redirect scheme https if !{ ssl_fc }
-        server 20639-web-01 3.227.217.150:80 check
-        server 20639-web-02 3.95.27.202:80 check
+        server 20639-web-01 172.29.16.1:80 check
+        server 20639-web-02 192.168.1.:80 check
 
-frontend www-http-munyasi.tech-frontend
+frontend www-http-kipsamoh.tech-frontend
         bind *:80
-        bind *:443 ssl crt /etc/haproxy/certs/munyasi.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/kipsamoh.tech.pem
         acl letsencrypt-acl path_beg /.well-known/acme-challenge/
         # reqadd X-Forwarded-Proto:\ http
-        default_backend munyasi.tech-backend
+        default_backend kipsamoh.tech-backend
 
 backend letsencrypt-backend
-   server letsencrypt 127.0.0.1:54321
+   server letsencrypt 0.0.0.1:54321

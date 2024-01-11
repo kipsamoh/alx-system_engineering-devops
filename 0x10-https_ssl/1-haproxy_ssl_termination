@@ -39,7 +39,7 @@ defaults
         option forwardfor
         option http-server-close
 
-#--munyasi.tech-params-begin--
+#--ksamh.tech-params-begin--
 frontend munyasi.tech-frontend
         bind *:80
         bind *:443 ssl crt /etc/haproxy/certs/munyasi.tech.pem

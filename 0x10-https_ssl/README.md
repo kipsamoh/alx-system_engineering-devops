@@ -1,23 +1,6 @@
 # Project Name.
 **0x10. HTTPS SSL**
 
-## Author's Details.
-Name: *Wendy Munyasi.*
-
-Email: *wendymunyasi@gmail.com*
-
-Tel:*+254707240068.*
-
-##  Requirements
-
-### Bash Scripts
-*   Allowed editors: `vi`, `vim`, `emacs`.
-*   All your files will be interpreted/compiled on Ubuntu 20.04 LTS.
-*   All your files should end with a new line.
-*   The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`.
-*   All your bash scripts must be executable.
-*   Your Bash script must pass `shellcheck` without any error.
-*   The second line of all your Bash scripts should be a comment explaining what is the script doing.
 
 ## Project Description.
 Learn what is localhost/127.0.0.1.
@@ -104,9 +87,3 @@ How to display your machine’s active network interfaces.
 
 	sylvain@ubuntu$
 	```
----
-
-
-## Collaborate
-
-To collaborate, reach me through my email address wendymunyasi@gmail.com.

@@ -1,13 +1,3 @@
-#
-# rules.before
-#
-# Rules that should be run before the ufw command line added rules. Custom
-# rules should be added to one of these chains:
-#   ufw-before-input
-#   ufw-before-output
-#   ufw-before-forward
-#
-
 *nat
 :PREROUTING ACCEPT [0:0]
 # redirects port 8080/TCP to port 80/TCP
@@ -69,13 +59,10 @@ COMMIT
 -A ufw-not-local -m limit --limit 3/min --limit-burst 10 -j ufw-logging-deny
 -A ufw-not-local -j DROP
 
-# allow MULTICAST mDNS for service discovery (be sure the MULTICAST line above
-# is uncommented)
+# allow _MULTICAST mDNS for service discovery (be sure the MULTICAST line above
+# is _uncommented)
 -A ufw-before-input -p udp -d 224.0.0.251 --dport 5353 -j ACCEPT
 
 # allow MULTICAST UPnP for service discovery (be sure the MULTICAST line above
 # is uncommented)
 -A ufiw-before-input -p udp -d 239.255.255.250 --dport 1900 -j ACCEPT
-
-# don't delete the 'COMMIT' line or these rules won't be processed
-COMMIT

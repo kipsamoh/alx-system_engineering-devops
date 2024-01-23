@@ -1,23 +1,6 @@
 # Project Name.
 **0x14. MySQL**
 
-## Author's Details.
-Name: *Wendy Munyasi.*
-
-Email: *wendymunyasi@gmail.com*
-
-Tel:*+254707240068.*
-
-##  Requirements
-
-*   Allowed editors: `vi`, `vim`, `emacs`.
-*   All your files will be interpreted/compiled on Ubuntu 20.04 LTS.
-*   All your files should end with a new line.
-*   All your Bash script files must be executable.
-*   Your Bash scripts must pass `Shellcheck` without any error.
-*   The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`.
-*   The second line of all your Bash scripts should be a comment explaining what is the script doing.
-
 
 ## Project Description.
 
@@ -31,8 +14,3 @@ What is the purpose of a database replica. Why database backups need to be store
 * **3. Quite an experience to live in fear, isn't it?** - On your primary MySQL server (web-01), create a new user for the replica server.
 * **4. Setup a Primary-Replica infrastructure using MySQL** - Primary must be hosted on `web-01` - do not use the `bind-address`, just comment out this parameter. MySQL replica must be hosted on `web-02`.
 * **5. MySQL backup** - Write a Bash script that generates a MySQL dump and creates a compressed archive out of it. - `5-mysql_backup`.
-
-
-## Collaborate
-
-To collaborate, reach me through my email address wendymunyasi@gmail.com.

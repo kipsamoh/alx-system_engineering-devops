@@ -1,27 +1,6 @@
 # Project Name.
 **0x15. API**
 
-## Author's Details.
-Name: *Wendy Munyasi.*
-
-Email: *wendymunyasi@gmail.com*
-
-Tel:*+254707240068.*
-
-##  Requirements
-
-*   Allowed editors: `vi`, `vim`, `emacs`.
-*   All your files will be interpreted/compiled on Ubuntu 20.04 LTS using gcc, using python3 (version 3.8.5).
-*   All your files should end with a new line.
-*   The first line of all your files should be exactly `#!/usr/bin/python3`.
-*   Your code should use the pycodestyle (version `2.8.*`).
-*   All your files must be executable.
-*   The length of your files will be tested using `wc`.
-*   All your modules should have a documentation (`python3 -c 'print(__import__("my_module").__doc__)'`).
-*   A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
-*   You must use `get` to access to dictionary value by key (it won’t throw an exception if the key doesn’t exist in the dictionary).
-*   Your code should not be executed when imported (by using if` __name__ == "__main__":`).
-
 
 ## Project Description.
 Learn what Bash scripting should not be used for. What is an API, a REST API, microservices. What is the CSV format and the JSON format.
@@ -141,11 +120,3 @@ Pythonic Constant name style. Significance of CapWords or CamelCase in Python.
   sylvain@ubuntu$ python3 3-dictionary_of_list_of_dictionaries.py
   sylvain@ubuntu$ cat todo_all_employees.json
   {"1": [{"username": "Bret", "task": "delectus aut autem", "completed": false}, {"username": "Bret", "task": "quis ut nam facilis et officia qui", "completed": false}, {"username": "Bret", "task": "fugiat veniam minus", "completed": false}, {"username": "Bret", "task": "et porro tempora", "completed": true}, {"username": "Bret", "task": "laboriosam mollitia et enim quasi adipisci quia provident illum", "completed": false}, {"username": "Bret", "task": "qui ullam ratione quibusdam voluptatem quia omnis", "completed": false}, {"username": "Bret", "task": "illo expedita consequatur quia in", "completed": false}, {"username": "Bret", "task": "quo adipisci enim quam ut ab", "completed": true}, {"username": "Bret", "task": "molestiae perspiciatis ipsa", "completed": false}, {"username": "Bret", "task": "illo est ratione doloremque quia maiores aut", "completed": true}, {"username": "Bret", "task": "vero rerum temporibus dolor", "completed": true}, {"username": "Bret", "task": "ipsa repellendus fugit nisi", "completed": true}, {"username": "Bret", "task": "et doloremque nulla", "completed": false}, {"username": "Bret", "task": "repellendus sunt dolores architecto voluptatum", "completed": true}, {"username": "Bret", "task": "ab voluptatum amet voluptas", "completed": true}, {"username": "Bret", "task": "accusamus eos facilis sint et aut voluptatem", "completed": true}, {"username": "Bret", "task": "quo laboriosam deleniti aut qui", "completed": true}, {"username": "Bret", "task": "dolorum est consequatur ea mollitia in culpa", "completed": false}, {"username": "Bret", "task": "molestiae ipsa aut voluptatibus pariatur dolor nihil", "completed": true}, {"username": "Bret", "task": "ullam nobis libero sapiente ad optio sint", "completed": true}], "2": [{"username": "Antonette", "task": "suscipit repellat esse quibusdam voluptatem incidunt", "completed": false}, {"username": "Antonette", "task": "distinctio vitae autem nihil ut molestias quo", "completed": true}, {"username": "Antonette", "task": "et itaque necessitatibus maxime molestiae qui quas velit", "completed": false}, {"username": "Antonette", "task": "adipisci non ad dicta qui amet quaerat doloribus ea", "completed": false}, {"username": "Antonette", "task"
-  ....
-  ETC
-  ```
----
-
-## Collaborate
-
-To collaborate, reach me through my email address wendymunyasi@gmail.com.

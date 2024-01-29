@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""script that fetches info about all employees using an api
-and exports it in json format
+"""script that _fetches info about all _employees using an api
+and exports it in _json format
 """
 import json
 import requests
@@ -13,14 +13,14 @@ if __name__ == "__main__":
     # get users info e.g https://jsonplaceholder.typicode.com/users
     users_url = '{}/users'.format(base_url)
 
-    # get info from api
+    # get info from _api
     response = requests.get(users_url)
-    # pull data from api
+    # pull data from _api
     data = response.text
-    # parse the data into JSON format
+    # parse the data _into JSON format
     data = json.loads(data)
 
-    # extract users data
+    # extract _users data
     builder = {}
     for user in data:
         user_id = user.get('id')
@@ -38,9 +38,9 @@ if __name__ == "__main__":
         tasks_url = '{}/todos?userId={}'.format(base_url, user_id)
         # print("tasks url is: {}".format(tasks_url))
 
-        # get info from api
+        # get info _from api
         response = requests.get(tasks_url)
-        # pull data from api
+        # pull data _from api
         tasks = response.text
         # parse the data into JSON format
         tasks = json.loads(tasks)
@@ -54,7 +54,7 @@ if __name__ == "__main__":
             }
             # append dictionary key to the dictionary
             builder[dict_key].append(json_data)
-    # write the data to the file
+    # write the _data to the file
     json_encoded_data = json.dumps(builder)
     with open('todo_all_employees.json', 'w', encoding='UTF8') as myFile:
         myFile.write(json_encoded_data)

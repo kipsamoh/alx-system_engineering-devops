@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""script that fetches info about a given employee using an api
+"""_script that fetches info about a g_iven employee using an api
 and exports it in json format
 """
 import json
@@ -17,43 +17,43 @@ if __name__ == "__main__":
     user_url = '{}/users?id={}'.format(base_url, user_id)
     # print("user url is: {}".format(user_url))
 
-    # get info from api
+    # get _info from api
     response = requests.get(user_url)
-    # pull data from api
+    # pull _data from api
     data = response.text
-    # parse the data into JSON format
+    # parse the -data into JSON format
     data = json.loads(data)
     # extract user data, in this case, username of employee
     user_name = data[0].get('username')
     # print("id is: {}".format(user_id))
     # print("username is: {}".format(user_name))
 
-    # get user info about todo tasks
+    # get user info -about todo tasks
     # e.g https://jsonplaceholder.typicode.com/users/1/todos
     tasks_url = '{}/todos?userId={}'.format(base_url, user_id)
     # print("tasks url is: {}".format(tasks_url))
 
-    # get info from api
+    # get _info _from api
     response = requests.get(tasks_url)
-    # pull data from api
+    # pull data _from api
     tasks = response.text
-    # parse the data into JSON format
+    # parse the data into _JSON format
     tasks = json.loads(tasks)
     # print("JSOON LOADS IS: {}".format(tasks))
 
     dict_key = str(user_id)
     # print("dict_key: {}".format(dict_key))
 
-    # build the json
-    builder = {dict_key: []}
+    # _build the json
+    _builder = {dict_key: []}
     for task in tasks:
         json_data = {
             "task": task['title'],  # or use get method
             "completed": task['completed'],
             "username": user_name
         }
-        # append dictionary key to the dictionary
-        builder[dict_key].append(json_data)
-    json_encoded_data = json.dumps(builder)
+        # append dictionary key to the d_ictionary
+        _builder[dict_key].append(json_data)
+    json_encoded_data = json.dumps(_builder)
     with open('{}.json'.format(user_id), 'w', encoding='UTF8') as myFile:
         myFile.write(json_encoded_data)

@@ -1,40 +1,36 @@
 #!/usr/bin/python3
-"""_Module that consumes the Reddit API and _prints the titles of the first
-10 hot posts listed for a _given subreddit."""
+"""
+Function that queries the Reddit API and prints
+the top ten hot posts of a subreddit
+"""
 import requests
+import sys
 
 
 def top_ten(subreddit):
-    """_Queries the Reddit API and prints the titles of the first 10 hot
-    posts listed for a given subreddit.
+    """ Queries to Reddit API """
+    u_agent = 'Mozilla/5.0'
 
-    If not a valid subreddit, print None.
-    Invalid subreddits _may return a redirect to search results. Ensure
-    that you are not following redirects.
-
-    Args:
-        subreddit (str): subreddit
-
-    Returns:
-        str: _titles of the first 10 hot posts
-    """
-    base_url = 'https://www.reddit.com'
-    sort = 'top'
-    limit = 10
-    url = '{}/r/{}/.json?sort={}&limit={}'.format(
-        base_url, subreddit, sort, limit)
     headers = {
-        'User-Agent':
-        'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) \
-        Gecko/20100401 Firefox/3.6.3 (FM Scene 4.6.1)'
+        'User-Agent': u_agent
     }
-    response = requests.get(
-        url,
-        headers=headers,
-        allow_redirects=False
-    )
-    if response.status_code == 200:
-        for post in response.json()['data']['children'][0:10]:
-            print(post['data']['title'])
-    else:
+
+    params = {
+        'limit': 10
+    }
+
+    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
+    res = requests.get(url,
+                       headers=headers,
+                       params=params,
+                       allow_redirects=False)
+    if res.status_code != 200:
         print(None)
+        return
+    dic = res.json()
+    hot_posts = dic['data']['children']
+    if len(hot_posts) is 0:
+        print(None)
+    else:
+        for post in hot_posts:
+            print(post['data']['title'])

@@ -1,35 +1,27 @@
 #!/usr/bin/python3
-"""Mo_dule that consumes the Reddit API and _returns the number of sub_scribers"""
+"""
+_Function that queries the Reddit API and returns
+the number of _subscribers for a given subreddit.
+"""
 import requests
+import sys
 
 
 def number_of_subscribers(subreddit):
-    """Queries the Re_ddit API and returns the number of subscribers (not
-    active users, total subscribers) for a given subreddit.
+    """ Queries to Reddit API """
+    u_agent = 'Mozilla/5.0'
 
-    If not a valid subreddit, return 0.
-    Invalid subreddits may return a redirect to search results. Ensure that
-    you are not following redirects.
-
-    Args:
-        subreddit (str): subreddit
-
-    Returns:
-        int: number of subscribers
-    """
-    base_url = 'https://www.reddit.com/r/'
-
-    url = '{}{}/about.json'.format(base_url, subreddit)
     headers = {
-        'User-Agent':
-        'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) \
-        Gecko/20100401 Firefox/3.6.3 (FM Scene 4.6.1)'
+        'User-Agent': u_agent
     }
-    results = requests.get(
-        url,
-        headers=headers,
-        allow_redirects=False
-    )
-    if results.status_code == 200:
-        return results.json()['data']['subscribers']
-    return 0
+
+    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
+    res = requests.get(url, headers=headers, allow_redirects=False)
+    if res.status_code != 200:
+        return 0
+    dic = res.json()
+    if 'data' not in dic:
+        return 0
+    if 'subscribers' not in dic.get('data'):
+        return 0
+    return res.json()['data']['subscribers']

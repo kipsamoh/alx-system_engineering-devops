@@ -1,22 +1,22 @@
 #!/usr/bin/python3
-"""Module that consumes the Reddit API and prints the titles of the first
-10 hot posts listed for a given subreddit."""
+"""_Module that consumes the Reddit API and _prints the titles of the first
+10 hot posts listed for a _given subreddit."""
 import requests
 
 
 def top_ten(subreddit):
-    """Queries the Reddit API and prints the titles of the first 10 hot
+    """_Queries the Reddit API and prints the titles of the first 10 hot
     posts listed for a given subreddit.
 
     If not a valid subreddit, print None.
-    Invalid subreddits may return a redirect to search results. Ensure
+    Invalid subreddits _may return a redirect to search results. Ensure
     that you are not following redirects.
 
     Args:
         subreddit (str): subreddit
 
     Returns:
-        str: titles of the first 10 hot posts
+        str: _titles of the first 10 hot posts
     """
     base_url = 'https://www.reddit.com'
     sort = 'top'

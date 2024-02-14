@@ -1,13 +1,6 @@
 # Project Name.
 **0x17. Web stack debugging #3**
 
-## Author's Details.
-Name: *Wendy Munyasi.*
-
-Email: *wendymunyasi@gmail.com*
-
-Tel:*+254707240068.*
-
 ##  Requirements
 
 *   Allowed editors: `vi`, `vim`, `emacs`.
@@ -73,8 +66,3 @@ $ gem install puppet-lint -v 2.1.1
   root@e514b399d69d:~#
   ```
 ---
-
-
-## Collaborate
-
-To collaborate, reach me through my email address wendymunyasi@gmail.com.

@@ -1,13 +1,6 @@
 # Project Name.
 **0x18. Webstack monitoring**
 
-## Author's Details.
-Name: *Wendy Munyasi.*
-
-Email: *wendymunyasi@gmail.com*
-
-Tel:*+254707240068.*
-
 ##  Requirements
 
 *   Allowed editors: `vi`, `vim`, `emacs`.
@@ -24,8 +17,3 @@ Tel:*+254707240068.*
 * **0. Sign up for Datadog and install datadog-agent** - Install `datadog-agent`[(https://www.datadoghq.com/)] on `web-01`.
 * **1. Monitor some metrics** - Set up some monitors within the Datadog dashboard to monitor and alert you of a few.
 * **2. Create a dashboard** - create a dashboard with different metrics displayed in order to get a few different visualizations..
-
-
-## Collaborate
-
-To collaborate, reach me through my email address wendymunyasi@gmail.com.

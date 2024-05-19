@@ -1,35 +1,91 @@
-Issue Topic: Authentication Service Outage Due to Misconfigured Firewall Rule
-synopsis:
-Duration:
-Start Time: February 17, 2024, 10:00 AM (PST)
-End Time: February 17, 2024, 2:00 PM (PST)
-Impact:
-Service Down: Customer Authentication System
-Users Experienced: Inability to log in, delays in accessing accounts
-Affected Users: 100% of users to attempting authenticate during the outage
-Root Cause:
-The root cause of the outage was identified as a misconfigured firewall rule that inadvertently blocked incoming traffic to the authentication service.
-Timeline:
-10:00 AM: Issue detected as users reported difficulties logging in.
-10:10 AM: Engineering team alerted through automated monitoring systems.
-10:15 AM: Initial investigation focused on backend server performance due to high CPU usage.
-10:45 AM: Determined backend servers were functioning normally; suspicion shifted to network issues.
-11:30 AM: Realized firewall logs showed dropped traffic; identified misconfigured rule.
-12:00 PM: Incident escalated to senior network engineer for assistance.
-1:30 PM: Firewall rule corrected to allow traffic; service began returning to normal.
-2:00 PM: Service fully restored; incident closed.
-Root Cause and Resolution:
-Root Cause Explanation:
-The issue stemmed from a misconfigured firewall rule blocking incoming traffic to the authentication service. This resulted in users being unable to authenticate, causing service disruption.
-Resolution Details:
-The misconfigured firewall rule was identified and promptly corrected to allow incoming traffic to reach the authentication service. Once the rule was adjusted, normal service functionality resumed.
-Corrective and Preventative Measures:
-Improvements/Fixes:
-Regular firewall rule audits to prevent misconfigurations.
-Enhanced monitoring for dropped traffic and network anomalies.
-Implementing automated alerts for critical firewall rule changes.
-Tasks to Address the Issue:
-Conduct a thorough review of firewall rules to ensure correctness.
-Sessions for network operations staff to stay updated on best practices and procedures.nhance documentation for firewall configurations to facilitate easier troubleshooting.
-Schedule regular training sessions
+# Curriculum
+## SE Foundations
+### Average: 138.21%
+### 0x19. Postmortem
 
+**DevOps**
+**SysAdmin**
+**Weight**: 1
+**Project over** - took place from Feb 12, 2024 6:00 AM to Feb 19, 2024 6:00 AM
+**Manual QA review** was done by Joshua Chikasha on Feb 17, 2024 1:04 PM
+
+### In a nutshell…
+- **Manual QA review**: 12.3/13 mandatory & 1.0/1 optional
+- **Altogether**: 189.24%
+- **Mandatory**: 94.62%
+- **Optional**: 100.0%
+- **Calculation**: 94.62% + (94.62% * 100.0%) == 189.24%
+- **Overall comment**: Good, keep it
+
+## Concepts
+For this project, we expect you to look at this concept:
+
+### On-call
+**Background Context**
+
+Any software system will eventually fail, and that failure can come stem from a wide range of possible factors: bugs, traffic spikes, security issues, hardware failures, natural disasters, human error… Failing is normal and failing is actually a great opportunity to learn and improve. Any great Software Engineer must learn from his/her mistakes to make sure that they won’t happen again. Failing is fine, but failing twice because of the same issue is not.
+
+A postmortem is a tool widely used in the tech industry. After any outage, the team(s) in charge of the system will write a summary that has 2 main goals:
+
+- To provide the rest of the company’s employees easy access to information detailing the cause of the outage. Often outages can have a huge impact on a company, so managers and executives have to understand what happened and how it will impact their work.
+- And to ensure that the root cause(s) of the outage has been discovered and that measures are taken to make sure it will be fixed.
+
+**Resources**
+Read or watch:
+- Incident Report, also referred to as a Postmortem
+- The importance of an incident postmortem process
+- What is an Incident Postmortem?
+
+## More Info
+**Manual QA Review**
+
+It is your responsibility to request a review for your postmortem from a peer before the project’s deadline. If no peers have been reviewed, you should request a review from a TA or staff member.
+
+## Tasks
+### 0. My first postmortem
+**mandatory**
+**Score**: 94.62% (Checks completed: 100.0%)
+
+Using one of the web stack debugging project issue or an outage you have personally faced, write a postmortem. Most of you will never have faced an outage, so just get creative and invent your own :)
+
+**Requirements:**
+
+**Issue Summary (that is often what executives will read)** must contain:
+- duration of the outage with start and end times (including timezone)
+- what was the impact (what service was down/slow? What were user experiencing? How many % of the users were affected?)
+- what was the root cause
+
+**Timeline** (format bullet point, format: time - keep it short, 1 or 2 sentences) must contain:
+- when was the issue detected
+- how was the issue detected (monitoring alert, an engineer noticed something, a customer complained…)
+- actions taken (what parts of the system were investigated, what were the assumption on the root cause of the issue)
+- misleading investigation/debugging paths that were taken
+- which team/individuals was the incident escalated to
+- how the incident was resolved
+
+**Root cause and resolution** must contain:
+- explain in detail what was causing the issue
+- explain in detail how the issue was fixed
+
+**Corrective and preventative measures** must contain:
+- what are the things that can be improved/fixed (broadly speaking)
+- a list of tasks to address the issue (be very specific, like a TODO, example: patch Nginx server, add monitoring on server memory…)
+
+**Be brief and straight to the point, between 400 to 600 words**
+
+**While postmortem format can vary, stick to this one so that you can get properly reviewed by your peers.**
+
+**Please, remember that these blogs must be written in English to further your technical ability in a variety of settings.**
+
+**Add URLs here:**
+- [Google Doc](https://docs.google.com/document/d/1SxEiO9ZU6RKggyqi-YxhyB9JfJf3qVbwfq10-5w-cWU/edit?usp=sharing)
+
+### 1. Make people want to read your postmortem
+#advanced
+**Score**: 100.0% (Checks completed: 100.0%)
+
+We are constantly stormed by a quantity of information, it’s tough to get people to read you.
+
+Make your post-mortem attractive by adding humour, a pretty diagram or anything that would catch your audience attention.
+
+**Please, remember that these blogs must be written in English to further your technical ability in a variety of settings.

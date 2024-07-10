@@ -1,5 +1,3 @@
-Curriculum
-
 SE FoundationsAverage: 138.21%
 
 0x14. MySQL
